@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2 EXEMPLO</title>
+    <style>
+        .flex-div {
+            width: 500px;
+            display: flex;
+        }
+
+        .child-div1 {
+            border: 1px solid black;
+            flex-basis: 300px;
+            /*define uma largura inicial*/
+            /* flex-grow: 2;/*cresce 2x mais que a outra div*/
+            flex-shrink: 2;
+            /*define o fator de diminuição*/
+        }
+
+        .child-div2 {
+            border: 1px solid black;
+            flex-basis: 300px;
+            flex-shrink: 1;
+            /*flex-grow:  1;/*o quanto ela vai crescer pra ocupar o espaço total*/
+
+        }
+
+        /*largura total: 500px
+        espaço sobrando: 300px
+        
+        fator de crescimento do filho 1: 2/3 * 300px = 200px
+        fator de crescimento do filho 2: 1/3 * 300px = 100px*/
+    </style>
+</head>
+
+<body>
+    <div class="flex-div">
+        <div class="child-div1">
+            1
+        </div>
+        <div class="child-div2">
+            2
+        </div>
+    </div>
+</body>
+
+</html>

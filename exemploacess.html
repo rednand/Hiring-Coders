@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header role="banner">
+        <!-- banner é a área principal da página-->
+
+
+        <nav role="navigation" aria-level="main navigation">
+            <!--navegação principal-->
+            <!--reforça que é a área de navegação-->
+            <ul>
+                <li role="menu">
+                    <a href="#" role="menuitem">Home</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Contato</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Conteúdos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--tela principal-->
+    <main role="main">
+        <br>
+        <img src="#" alt="imagem" title="imagem vazia" aria-labelledby="description-pagina-vazia">
+        <p id="description-pagina-vazia">
+
+        </p>
+        <br>
+        <button aria-label="Acesse o site oficial x para saber mais sobre esse site aqui" aria-labelledby="bsite">
+            Saber mais
+        </button>
+        <br>
+        <p id="bsite">Site x</p>
+        <!--aria-label descreve botão-->
+        <br>
+        <p lang="en">This part is in english</p>
+        <!--tem uma entonação diferente-->
+        <br>
+        <h3>Acessibilidade em tabelas</h3>
+        <table summary="Nome de empresas" border="1">
+            <caption>Descrição da tabela</caption>
+            <thead>
+                <tr>
+                    <th abbr="Empresa" scope="col">Empresa</th>
+                    <th abbr="Trabalhadores" scope="col"> Número de Trabalhadores</th>
+                    <th abbr="Fundação" scope="col">Fundação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Empresa</th>
+                    <th> Número de Trabalhadores</th>
+                    <th>Fundação</th>
+                </tr>
+                <tr>
+                    <th scope="rol">Empresa</th>
+                    <th> Número de Trabalhadores</th>
+                    <th>Fundação</th>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <br>
+    <footer role="contentinfo">
+        &copy; 2020 Gama Academy
+
+    </footer>
+
+</body>
+
+</html>
